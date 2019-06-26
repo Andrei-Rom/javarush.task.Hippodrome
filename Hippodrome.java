@@ -17,6 +17,7 @@ public class Hippodrome {
         game.getHorses().add(sharif);
 
         game.run();
+        game.printWinner();
     }
 
     public List<Horse> getHorses() {
