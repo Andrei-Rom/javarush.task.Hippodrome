@@ -11,7 +11,9 @@ public class Horse {
         this.distance = distance;
     }
 
-    public void move(){}
+    public void move(){
+        this.distance += speed* Math.random();
+    }
     public void print(){}
 
     public String getName() {
