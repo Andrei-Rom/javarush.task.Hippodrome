@@ -15,7 +15,8 @@ public class Hippodrome {
         game.getHorses().add(recco);
         game.getHorses().add(racket);
         game.getHorses().add(sharif);
-        
+
+        game.run();
     }
 
     public List<Horse> getHorses() {
