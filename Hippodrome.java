@@ -48,4 +48,20 @@ public class Hippodrome {
         }
     }
 
+    public Horse getWinner(){
+        double maxDistanc = 0.0;
+        Horse winner = null;
+        for (int i = 0; i < horses.size(); i++) {
+            if (horses.get(i).getDistance() > maxDistanc) {
+                maxDistanc = horses.get(i).getDistance();
+                winner = horses.get(i);
+            }
+        }
+        return winner;
+    }
+
+    public void printWinner(){
+        System.out.println("Winner is " + getWinner().getName() + "!");
+    }
+
 }
